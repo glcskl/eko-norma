@@ -105,6 +105,20 @@
     counters.forEach((el) => (el.textContent = el.dataset.count));
   }
 
+  /* ---------- Заполнение шкалы готовности в кабинете ---------- */
+  const gauge = document.querySelector(".gauge");
+  if (gauge) {
+    const target = 92;
+    const start = performance.now() + 350;
+    const step = (now) => {
+      const t = Math.min(Math.max((now - start) / 1300, 0), 1);
+      const eased = 1 - Math.pow(1 - t, 3);
+      gauge.style.setProperty("--gauge", String(Math.round(target * eased)));
+      if (t < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
   /* ---------- Чек-лист готовности ---------- */
   const boxes = Array.from(document.querySelectorAll(".check-item input"));
   const answerCount = document.getElementById("answerCount");
