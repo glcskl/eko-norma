@@ -39,11 +39,11 @@ python3 tools/generate_docs.py
 
 ## Деплой
 
-Сайт опубликован через **GitHub Pages** из ветки `main` (корень репозитория).
+Сайт опубликован через **GitHub Pages** из ветки `main` (корень репозитория): https://glcskl.github.io/eko-norma/
 После пуша в `main` Pages автоматически пересобирает страницу.
 
-- Лендинг: `https://<username>.github.io/eko-norma/`
-- Решение: `https://<username>.github.io/eko-norma/reshenie.html`
+- Лендинг: `https://glcskl.github.io/eko-norma/`
+- Решение: `https://glcskl.github.io/eko-norma/reshenie.html`
 
 Для собственного домена добавьте файл `CNAME` с доменом и включите HTTPS в настройках Pages.
 
@@ -58,3 +58,7 @@ python3 tools/generate_docs.py
 ## Источники
 
 Белстат, Минприроды РБ, Pravo.by, Эталон Online, Primepress, OhRanaPrirody.by, Белта, Витебский облисполком. Полный список — в `reshenie.html` и в документе `оформлерние потом.docx`.
+
+## Репозиторий
+
+https://github.com/glcskl/eko-norma
